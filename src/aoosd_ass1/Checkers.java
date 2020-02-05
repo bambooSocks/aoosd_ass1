@@ -14,6 +14,7 @@ public class Checkers {
 	public static void printBoard (char[][] board) {
 		System.out.println("     0 1 2 3 4 5 6 7   <- X axis");
 		System.out.println("   +-----------------+");
+		
 		for (int i = 0; i < board.length; i++) {
 			System.out.print(" " + i + " | ");
 			for (char spot: board[i]) {
@@ -21,6 +22,7 @@ public class Checkers {
 			}
 			System.out.println("|");
 		}
+		
 		System.out.println("   +-----------------+");
 	}
 	
