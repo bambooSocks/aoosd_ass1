@@ -78,7 +78,7 @@ public class Checkers {
 	public static void main(String[] args) {
 		int ox = 0, oy = 0, nx = 0, ny = 0;
 		int player = 1;
-		System.out.println(board[0][1]);
+		
 		while (true) {
 			// print board
 			printBoard(board);
@@ -119,6 +119,7 @@ public class Checkers {
 					continue;
 				}
 				
+				// check whether the place where you want to move to is empty
 				if (board[ny][nx] != ' ') {
 					System.err.println("The tile you want to move to is occupied");
 					coordsReceived = false;
